@@ -1,6 +1,18 @@
+@import '../modules/mixins.scss';
+
+header {
+  margin-top: 1.25rem;
+  min-width: 17.5rem;
+  @include marginLeftRightMobile;
+  img {
+    width: 9.06rem;
+    height: 2.93rem;
+  }
+}
+
 .header-style {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  border: 2px solid; 
+  align-items: center;
+  justify-content: center;
 }

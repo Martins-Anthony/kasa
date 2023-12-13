@@ -1,0 +1,24 @@
+/* Medium devices (tablets, less/equal than 425px) */
+@mixin tablette {
+  @media (min-width:425px) {
+      @content;
+  }
+}
+
+/* Large devices (Computer 1024px) */
+@mixin computer {
+  @media (min-width:1024px) {
+      @content;
+  }
+}
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin marginLeftRightMobile {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}

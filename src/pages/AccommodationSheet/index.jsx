@@ -1,5 +1,7 @@
+import '../../scss/style.scss'
+
 function AccommodationSheet() {
-  return <div>Fiche logement</div>
+  return <div className="leftRightMargin">Fiche logement</div>
 }
 
 export default AccommodationSheet

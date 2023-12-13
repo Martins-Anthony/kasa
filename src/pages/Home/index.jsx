@@ -1,5 +1,7 @@
+import '../../scss/style.scss'
+
 function Home() {
-  return <div>Page home</div>
+  return <div className="leftRightMargin">Page home</div>
 }
 
 export default Home

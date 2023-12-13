@@ -1,0 +1,22 @@
+@import "../style.scss";
+@import "./mixins.scss";
+
+.footer-style {
+  height: 13.06rem;
+  background-color: $black;
+  color: $white;
+  font-size: 0.75rem;
+  @include center;
+  flex-direction: column;
+
+  img {
+    width: 7.62rem;
+    height: 2.46rem;
+  }
+  p {
+    width: 8.35rem;
+    height: 2.87rem;
+    text-align: center;
+  }
+}
+
