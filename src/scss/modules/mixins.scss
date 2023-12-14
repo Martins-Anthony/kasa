@@ -1,14 +1,14 @@
 /* Medium devices (tablets, less/equal than 425px) */
 @mixin tablette {
-  @media (min-width:425px) {
-      @content;
+  @media (min-width: 425px) {
+    @content;
   }
 }
 
 /* Large devices (Computer 1024px) */
 @mixin computer {
-  @media (min-width:1024px) {
-      @content;
+  @media (min-width: 1024px) {
+    @content;
   }
 }
 
