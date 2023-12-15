@@ -17,8 +17,9 @@ body {
   margin: 0;
 }
 
-.leftRightMargin {
-  @include marginLeftRightMobile;
+.left-right-margin {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 
 
