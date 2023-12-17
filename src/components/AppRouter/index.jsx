@@ -5,6 +5,7 @@ import Header from '../Header'
 import About from '../../pages/About'
 import Error from '../Error'
 import Footer from '../Footer'
+import HousingSheet from '../../pages/HousingSheet'
 
 function AppRouter() {
   return (
@@ -12,7 +13,8 @@ function AppRouter() {
       <div className="left-right-margin">
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
+          <Route path="/housing/:id" element={<HousingSheet />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<Error />} />
         </Routes>

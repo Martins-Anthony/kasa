@@ -1,5 +1,6 @@
 import React from 'react'
 import housingData from '../../datas/housing.json'
+import { Link } from 'react-router-dom'
 import '../../scss/modules/card.scss'
 
 function Card() {
@@ -13,10 +14,12 @@ function Card() {
     ))
 
     return (
-      <div key={item.id} className="card-style">
-        <img src={item.cover} alt={item.title} />
-        <h2>{formatedTitle}</h2>
-      </div>
+      <Link to={`/housing/${item.id}`} key={item.id}>
+        <div className="card-style" key={item.id}>
+          <img src={item.cover} alt={item.title} />
+          <h2>{formatedTitle}</h2>
+        </div>
+      </Link>
     )
   })
 

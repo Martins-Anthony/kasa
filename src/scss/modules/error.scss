@@ -1,0 +1,16 @@
+@import "../style.scss"; 
+
+.error-container {
+  @include center;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 7.06rem;
+  color: $primary;
+  margin: 7.06rem 0;
+}
+
+.error-size {
+  font-size: 6rem;
+  font-weight: 700;
+  margin: 0;
+}

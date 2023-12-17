@@ -4,7 +4,7 @@ import Card from '../../components/Card'
 
 function Home() {
   return (
-    <div className="leftRightMargin">
+    <div>
       <Banner />
       <Card />
     </div>
