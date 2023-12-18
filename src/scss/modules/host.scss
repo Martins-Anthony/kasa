@@ -1,0 +1,27 @@
+@import '../style.scss';
+
+.host-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 0.81rem;
+}
+
+.host-profil {
+  display: flex;
+  align-items: center;
+  column-gap: 0.62rem;
+  p {
+    font-size: 0.75rem;
+    color: $primary;
+    text-align: right;
+    margin: 0;
+  }
+}
+
+.host-picture {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
