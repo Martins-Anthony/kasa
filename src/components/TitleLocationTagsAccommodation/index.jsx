@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import '../../scss/modules/titleLocationTagsAccommodation.scss'
 
 function TitleLocationTagsAccommodation({
   title,
@@ -8,11 +9,11 @@ function TitleLocationTagsAccommodation({
   tagsthree,
 }) {
   return (
-    <div>
-      <h1>{title}</h1>
-      <p>{location}</p>
-      <div>
-        {tagsOne} {tagsTwo} {tagsthree}
+    <div className="accommodation-container">
+      <h1 className="accommodation-title">{title}</h1>
+      <p className="accommodation-location">{location}</p>
+      <div className="tags-container">
+        <div>{tagsOne}</div> <div>{tagsTwo}</div> <div>{tagsthree}</div>
       </div>
     </div>
   )

@@ -1,7 +1,9 @@
 @import "../style.scss";
 
 .banner-style {
-  padding-top: 1.69rem;
+  display: flex;
+  align-items: center;
+
   height: 6.9rem;
   position: relative;
   img {
@@ -11,6 +13,7 @@
     border-radius: 0.62rem;
     object-fit: cover;
     z-index: 1;
+    object-position: center;
   }
   h1 {
     color: $white;
