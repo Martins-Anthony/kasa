@@ -5,8 +5,9 @@ import { useParams } from 'react-router-dom'
 import TitleLocationTagsAccommodation from '../../components/TitleLocationTagsAccommodation'
 import Host from '../../components/Host'
 import Slideshow from '../../components/Slideshow'
+import Collapse from '../../components/Collapse'
 
-function HousingSheet() {
+function Housing() {
   const { id } = useParams() // Récupère l'ID depuis l'URL
   const selectedHousing = housingData.find((housing) => housing.id === id)
 
@@ -27,8 +28,20 @@ function HousingSheet() {
         picture={selectedHousing.host.picture}
         rating={selectedHousing.rating}
       />
+      <div className="housing-collapse-container">
+        <Collapse
+          key={`${selectedHousing.id}-3`}
+          title={'Description'}
+          content={selectedHousing.description}
+        />
+        <Collapse
+          key={`${selectedHousing.id}-4`}
+          title={'Équipements'}
+          content={selectedHousing.equipments}
+        />
+      </div>
     </div>
   )
 }
 
-export default HousingSheet
+export default Housing

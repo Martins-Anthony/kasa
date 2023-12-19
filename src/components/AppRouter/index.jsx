@@ -5,7 +5,7 @@ import Header from '../Header'
 import About from '../../pages/About'
 import Error from '../Error'
 import Footer from '../Footer'
-import HousingSheet from '../../pages/HousingSheet'
+import Housing from '../../pages/Housing'
 
 function AppRouter() {
   return (
@@ -14,7 +14,7 @@ function AppRouter() {
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/housing/:id" element={<HousingSheet />} />
+          <Route path="/housing/:id" element={<Housing />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<Error />} />
         </Routes>

@@ -1,0 +1,81 @@
+@import "../style.scss";
+
+.housing-collapse-container,
+.about-collapse-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+  max-width: 63.94rem;
+  box-sizing: border-box;
+}
+
+.about-collapse-container {
+  margin-top: 1.18rem;
+}
+
+.collapse-container {
+  position: relative;
+  p {
+    margin: 0;
+  }
+}
+
+.collapse-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  min-width: 20.94rem;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: $primary;
+  color: $white;
+  height: 1.87rem;
+  padding-left: 0.62rem;
+  padding-right: 0.62rem;
+  border-radius: 0.31rem;
+  z-index: 1;
+
+  h2 {
+    margin: 0;
+    font-size: 1.12rem;
+  }
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.arrow-icon {
+  &.down {
+    transform: rotate(-180deg);
+    transition: 0.3s ease;
+  }
+  &.up {
+    transition: 0.3s ease;
+  }
+}
+
+.collapse-content {
+  color: $primary;
+  
+  border-radius: 0.31rem;
+  background-color: $gray;
+  font-size: 1.12rem;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.animated-container {
+  height: 0;
+  scale: 0;
+  padding-top: 1.68rem;
+
+  &.visible {
+    height: 100%;
+    scale: 1;
+    padding: 2.69rem 1.25rem 1.25rem 1.25rem;
+  }
+}
