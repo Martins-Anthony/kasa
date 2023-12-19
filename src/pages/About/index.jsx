@@ -2,12 +2,12 @@ import '../../scss/style.scss'
 import Banner from '../../components/Banner'
 import aboutList from '../../datas/about.json'
 import Collapse from '../../components/Collapse'
+import bannerAbout from '../../assets/banner/bannerTwo.jpeg'
 
 function About() {
-  console.log(Object.keys(aboutList[0])[1])
   return (
     <div className="leftRightMargin">
-      <Banner />
+      <Banner picture={bannerAbout} />
       <div className="about-collapse-container">
         <Collapse
           key={Object.keys(aboutList[0])[0]}

@@ -1,15 +1,10 @@
-import BannerHome from '../../assets/banner/bannerOne.jpeg'
 import '../../scss/modules/banner.scss'
 
-function Banner() {
+function Banner({ picture, title }) {
   return (
     <div className="banner-style">
-      <img src={BannerHome} alt="banner" />
-      <h1>
-        Chez vous,
-        <br />
-        partout et ailleurs
-      </h1>
+      <img src={picture} alt="banner" />
+      <h1>{title}</h1>
     </div>
   )
 }

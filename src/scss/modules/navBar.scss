@@ -7,8 +7,12 @@
   justify-content: flex-end;
   font-size: 0.75rem;
   column-gap: 1.62rem;
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
+}
+
+.style-link-on {
+  text-decoration: underline;
+}
+
+.style-link-off {
+  text-decoration: none;
 }
