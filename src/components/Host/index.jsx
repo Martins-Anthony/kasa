@@ -2,9 +2,7 @@ import PropTypes from 'prop-types'
 import DefaultPicture from '../../assets/profil/host.png'
 import '../../scss/modules/host.scss'
 import React from 'react'
-import RatingStarts from '../Rating'
-
-function Host({ name, picture, rating }) {
+function Host({ name, picture }) {
   const spliteName = name.split(' ')
   const formatedName = spliteName.map((part, index) => (
     <React.Fragment key={index}>
@@ -14,12 +12,9 @@ function Host({ name, picture, rating }) {
   ))
 
   return (
-    <div className="host-container">
-      <RatingStarts rating={rating} />
-      <div className="host-profil">
-        <p>{formatedName}</p>
-        <img className="host-picture" src={picture} alt={name} />
-      </div>
+    <div className="host-profil">
+      <p>{formatedName}</p>
+      <img className="host-picture" src={picture} alt={name} />
     </div>
   )
 }

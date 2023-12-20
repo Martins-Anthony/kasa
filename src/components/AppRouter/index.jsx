@@ -10,7 +10,7 @@ import Housing from '../../pages/Housing'
 function AppRouter() {
   return (
     <Router>
-      <div className="left-right-margin">
+      <div className="container-header-route">
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />

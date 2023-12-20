@@ -1,4 +1,4 @@
-@import './modules/mixins.scss';
+@import "./modules/mixins.scss";
 
 $background: #ffffff;
 $primary: #ff6060;
@@ -6,8 +6,8 @@ $gray: #f6f6f6;
 $black: #000000;
 $white: #ffffff;
 
-*{
-  font-family: 'Montserrat', sans-serif;
+* {
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-style: normal;
   line-height: 142.6%;
@@ -15,6 +15,8 @@ $white: #ffffff;
 
 body {
   margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 a {
@@ -22,10 +24,20 @@ a {
   cursor: pointer;
 }
 
-.left-right-margin {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
+.container-header-route {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
+#root {
+  width: 100%;
+  max-width: 1440px;
+}
 
-
+@include computer {
+  .container-header-route {
+    max-width: 1240px;
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+  }
+}

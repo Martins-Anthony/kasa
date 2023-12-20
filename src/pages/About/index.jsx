@@ -1,4 +1,4 @@
-import '../../scss/style.scss'
+import '../../scss/about.scss'
 import Banner from '../../components/Banner'
 import aboutList from '../../datas/about.json'
 import Collapse from '../../components/Collapse'
@@ -6,7 +6,7 @@ import bannerAbout from '../../assets/banner/bannerTwo.jpeg'
 
 function About() {
   return (
-    <div className="leftRightMargin">
+    <>
       <Banner picture={bannerAbout} />
       <div className="about-collapse-container">
         <Collapse
@@ -30,7 +30,7 @@ function About() {
           content={aboutList[0].securite}
         />
       </div>
-    </div>
+    </>
   )
 }
 

@@ -1,0 +1,21 @@
+@import '../scss/modules/mixins.scss';
+
+.about-collapse-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+  
+  max-width: 63.94rem;
+  margin-top: 1.18rem;
+}
+
+@include computer {
+  .about-collapse-container {
+    padding-left: 6.75rem;
+    padding-right: 6.75rem;
+  }
+  .collapse-container {
+    max-width: 63.94rem;
+    width: 100%;
+  }
+}
