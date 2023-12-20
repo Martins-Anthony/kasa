@@ -1,10 +1,10 @@
 import React from 'react'
 import Home from '../../pages/Home'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Header from '../Header'
+import Header from '../../components/Layout/Header'
 import About from '../../pages/About'
-import Error from '../Error'
-import Footer from '../Footer'
+import Error from '../Layout/Error'
+import Footer from '../Layout/Footer'
 import Housing from '../../pages/Housing'
 
 function AppRouter() {

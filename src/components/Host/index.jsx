@@ -4,8 +4,8 @@ import '../../scss/modules/host.scss'
 import React from 'react'
 function Host({ name, picture }) {
   const spliteName = name.split(' ')
-  const formatedName = spliteName.map((part, index) => (
-    <React.Fragment key={index}>
+  const formatedName = spliteName.map((part, id) => (
+    <React.Fragment key={`${id}-1`}>
       {part}
       <br />
     </React.Fragment>
@@ -22,13 +22,11 @@ function Host({ name, picture }) {
 Host.protoTypes = {
   name: PropTypes.string.isRequired,
   picture: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired,
 }
 
 Host.defaultProps = {
   name: '',
   picture: DefaultPicture,
-  rating: '0',
 }
 
 export default Host
