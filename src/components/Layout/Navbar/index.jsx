@@ -1,4 +1,4 @@
-import '../../../scss/modules/navBar.scss'
+import '../../../scss/modules/layout/navBar.scss'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 

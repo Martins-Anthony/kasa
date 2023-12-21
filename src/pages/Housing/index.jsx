@@ -1,9 +1,9 @@
-import '../../scss/style.scss'
 import '../../scss/housing.scss'
 import React from 'react'
 import housingData from '../../datas/housing.json'
 import { useParams } from 'react-router-dom'
-import TitleLocationTagsAccommodation from '../../components/TitleLocationTagsAccommodation'
+import TitleLocalization from '../../components/TitleLocalization'
+import Tags from '../../components/Tags'
 import Host from '../../components/Host'
 import Slideshow from '../../components/Slideshow'
 import Collapse from '../../components/Collapse'
@@ -17,14 +17,13 @@ function Housing() {
     <div className="housing-container">
       <Slideshow key={selectedHousing.id} picture={selectedHousing.pictures} />
       <div className="housing-profil-container">
-        <TitleLocationTagsAccommodation
-          key={`${selectedHousing.id}-1`}
-          title={selectedHousing.title}
-          location={selectedHousing.location}
-          tagsOne={selectedHousing.tags[0]}
-          tagsTwo={selectedHousing.tags[1]}
-          tagsthree={selectedHousing.tags[2]}
-        />
+        <div className="accommodation-container">
+          <TitleLocalization
+            title={selectedHousing.title}
+            location={selectedHousing.location}
+          />
+          <Tags arrays={selectedHousing.tags} id={`${selectedHousing.id}-1`} />
+        </div>
         <div className="housing-host-container">
           <RatingStarts
             key={`${selectedHousing.id}-2`}

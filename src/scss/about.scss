@@ -1,10 +1,9 @@
-@import '../scss/modules/mixins.scss';
+@import '../scss/styles/mixins';
 
 .about-collapse-container {
   display: flex;
   flex-direction: column;
   row-gap: 1.25rem;
-  
   max-width: 63.94rem;
   margin-top: 1.18rem;
 }

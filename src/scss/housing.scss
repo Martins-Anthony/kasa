@@ -1,5 +1,3 @@
-@import '../scss/media/housing_media.scss';
-
 .housing-host-container {
   display: flex;
   justify-content: space-between;
@@ -8,3 +6,4 @@
   margin-bottom: 0.81rem;
 }
 
+@import '../scss/media/housing_media.scss';

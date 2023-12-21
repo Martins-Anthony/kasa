@@ -1,4 +1,4 @@
-@import "../modules/mixins.scss";
+@import "../../styles/mixins";
 
 header {
   margin-top: 1.25rem;
@@ -12,8 +12,6 @@ header {
 }
 
 .header-style {
-  display: flex;
+  @include center;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
