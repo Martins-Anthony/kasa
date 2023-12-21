@@ -1,0 +1,13 @@
+@import '../styles/mixins';
+
+.star {
+  height: 1.12rem;
+  width: 1.12rem;
+}
+
+@include computer {
+  .star {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+}

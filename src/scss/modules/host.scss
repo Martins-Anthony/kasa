@@ -1,4 +1,5 @@
 @import '../styles/colors';
+@import '../styles/mixins';
 
 .host-profil {
   display: flex;
@@ -16,4 +17,14 @@
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
+}
+
+@include computer {
+  .host-profil p{
+    font-size: 1.12rem;
+  }
+  .host-picture {
+    width: 4rem;
+    height: 4rem;
+  }
 }
