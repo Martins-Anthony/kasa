@@ -1,4 +1,5 @@
 @import '../styles/colors';
+@import '../styles/mixins';
 
 .slideshow-container {
   width: 100%;
@@ -37,10 +38,28 @@
   cursor: pointer;
 }
 
-.slideshow-count {
-  z-index: 2;
-  position: absolute;
-  color: $white;
-  bottom: 1.56rem;
+.hide-arrow-and-counter {
   display: none;
+}
+
+@include computer{
+
+  .slideshow-container,
+  .slideshow-picture {
+    height: 25.94rem;
+  }
+
+  .slideshow-arrow {
+    height: 7.47rem;
+    width: 6rem;
+  }
+
+  .slideshow-count {
+    font-size: 1.12rem;
+    z-index: 2;
+    position: absolute;
+    color: $white;
+    bottom: 1.56rem;
+  }
+
 }
