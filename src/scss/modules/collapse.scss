@@ -1,4 +1,5 @@
 @import '../styles/colors';
+@import '../styles/mixins';
 
 .housing-collapse-container {
   display: flex;
@@ -11,8 +12,12 @@
   max-width: 36.37rem;
   width: 100%;
   position: relative;
-  p {
+  height: 1.87rem;
+  p{
     margin: 0;
+  }
+  &.visible {
+    height: 100%;
   }
 }
 
@@ -34,7 +39,7 @@
 
   h2 {
     margin: 0;
-    font-size: 1.12rem;
+    font-size: 0.81rem;
   }
   img {
     width: 2rem;
@@ -59,19 +64,33 @@
   background-color: $gray;
   font-size: 1.12rem;
   font-weight: 400;
-  position: relative;
-  display: flex;
-  flex-direction: column;
 }
 
-.animated-container {
-  height: 0;
+.animated-container { 
   scale: 0;
   padding-top: 1.68rem;
 
   &.visible {
-    height: 100%;
     scale: 1;
     padding: 2.69rem 1.25rem 1.25rem 1.25rem;
   }
 }
+
+@include computer {
+  .collapse-title {
+    height: 3.25rem;
+    padding-left: 0.93rem;
+    padding-right: 0.93rem;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .animated-container {
+  
+    &.visible {
+      padding-top: 4.37rem;
+    }
+  }
+} 

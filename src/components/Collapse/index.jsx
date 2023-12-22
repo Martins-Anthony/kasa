@@ -4,15 +4,21 @@ import React, { useState } from 'react'
 
 function Collapse({ title, content }) {
   const [isArrowDown, setIsArrowDown] = useState(false)
-  const [isContainerVisible, setIsContainerVisible] = useState(false)
 
   const handleArrowClick = () => {
     setIsArrowDown(!isArrowDown)
-    setIsContainerVisible(!isContainerVisible)
+  }
+
+  let contentElement
+
+  if (typeof content === 'string') {
+    contentElement = <p>{content}</p>
+  } else if (typeof content === 'object') {
+    contentElement = content.map((item) => <p key={item}>{item}</p>)
   }
 
   return (
-    <div className={'collapse-container'}>
+    <div className={`collapse-container ${isArrowDown ? 'visible' : ''}`}>
       <div className="collapse-title">
         <h2>{title}</h2>
         <img
@@ -22,13 +28,13 @@ function Collapse({ title, content }) {
           onClick={handleArrowClick}
         />
       </div>
-      <p
+      <div
         className={`animated-container ${
-          isContainerVisible ? 'visible' : ''
-        } collapse-content`}
+          isArrowDown ? 'visible' : ''
+        } collapse-content `}
       >
-        {content}
-      </p>
+        {contentElement}
+      </div>
     </div>
   )
 }

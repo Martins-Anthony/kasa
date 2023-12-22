@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
-import '../../scss/modules/titleLocation.scss'
+import '../../scss/modules/label.scss'
 
-function TitleLocalization({ title, location }) {
+function Label({ title, location }) {
   return (
     <div className="accommodation-container">
       <h1 className="accommodation-title">{title}</h1>
@@ -10,14 +10,14 @@ function TitleLocalization({ title, location }) {
   )
 }
 
-TitleLocalization.propTypes = {
+Label.propTypes = {
   title: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
 }
 
-TitleLocalization.defaultProps = {
+Label.defaultProps = {
   title: '',
   location: '',
 }
 
-export default TitleLocalization
+export default Label
