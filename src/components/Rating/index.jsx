@@ -1,5 +1,5 @@
-import StartOn from '../../assets/profil/star-active-one.png'
-import StartOff from '../../assets/profil/star-active-two.png'
+import StartOn from '../../assets/profil/star-active.svg'
+import StartOff from '../../assets/profil/star-inactive.svg'
 import '../../scss/modules/rating.scss'
 
 function RatingStarts({ rating }) {

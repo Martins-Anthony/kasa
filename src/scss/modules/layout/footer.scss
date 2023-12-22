@@ -2,21 +2,41 @@
 @import "../../styles/colors";
 
 .footer-style {
-  height: 13.06rem;
+  max-height: 13.06rem;
   background-color: $black;
   color: $white;
   font-size: 0.75rem;
-  @include center;
+  display: flex;
+  align-items: center;
   flex-direction: column;
-  margin-top: 1.68rem;
+  padding-top: 4.12rem;
+  padding-bottom: 3.62rem;
 
   img {
     width: 7.62rem;
     height: 2.46rem;
   }
+
   p {
     width: 8.35rem;
     height: 2.87rem;
     text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0;
+  }
+}
+
+@include computer {
+  .footer-style {
+    
+    p {
+      font-size: 1.5rem;
+      width: 32rem;
+      margin: 1.78rem 0 0 0;
+    }
+
+    padding-bottom: 1.81rem;
   }
 }

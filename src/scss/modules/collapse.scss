@@ -13,9 +13,7 @@
   width: 100%;
   position: relative;
   height: 1.87rem;
-  p{
-    margin: 0;
-  }
+
   &.visible {
     height: 100%;
   }
@@ -62,8 +60,11 @@
   color: $primary;
   border-radius: 0.31rem;
   background-color: $gray;
-  font-size: 1.12rem;
-  font-weight: 400;
+  font-size: 0.75rem;
+  p {
+    margin: 0;
+    font-weight: 400;
+  }
 }
 
 .animated-container { 
@@ -84,6 +85,16 @@
 
     h2 {
       font-size: 1.5rem;
+    }
+  }
+
+  .collapse-container {
+    height: 3.25rem;
+  }
+
+  .collapse-content {
+    p {
+      font-size: 1.12rem;
     }
   }
 

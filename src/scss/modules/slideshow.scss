@@ -1,5 +1,5 @@
-@import '../styles/colors';
-@import '../styles/mixins';
+@import "../styles/colors";
+@import "../styles/mixins";
 
 .slideshow-container {
   width: 100%;
@@ -42,11 +42,14 @@
   display: none;
 }
 
-@include computer{
-
+@include computer {
   .slideshow-container,
   .slideshow-picture {
     height: 25.94rem;
+  }
+
+  .slideshow-picture {
+    border-radius: 1.56rem;
   }
 
   .slideshow-arrow {
@@ -61,5 +64,4 @@
     color: $white;
     bottom: 1.56rem;
   }
-
 }
