@@ -13,7 +13,7 @@
   width: 100%;
   position: relative;
   height: 1.87rem;
-
+  
   &.visible {
     height: 100%;
   }
@@ -24,7 +24,6 @@
   align-items: center;
   justify-content: space-between;
   position: absolute;
-  min-width: 20.94rem;
   box-sizing: border-box;
   width: 100%;
   background-color: $primary;

@@ -5,25 +5,19 @@ import '../../scss/modules/card.scss'
 
 function Card() {
   const itemList = housingData.map((item) => {
-    const spliteTitle = item.title.split(' - ')
-    const formatedTitle = spliteTitle.map((part, index) => (
-      <React.Fragment key={index}>
-        {part}
-        <br />
-      </React.Fragment>
-    ))
-
     return (
-      <Link to={`/housing/${item.id}`} key={item.id}>
-        <div className="card-style" key={item.id}>
-          <img src={item.cover} alt={item.title} />
-          <h2>{formatedTitle}</h2>
+      <article className="card-style" key={item.id}>
+        <div>
+          <Link className="card-link" to={`/housing/${item.id}`} key={item.id}>
+            <img className="card-img" src={item.cover} alt={item.title} />
+            <h2 className="card-title">{item.title}</h2>
+          </Link>
         </div>
-      </Link>
+      </article>
     )
   })
 
-  return <div className="card-container">{itemList}</div>
+  return <section className="card-container">{itemList}</section>
 }
 
 export default Card
