@@ -10,8 +10,41 @@
   margin: 7.06rem 0;
 }
 
-.error-size {
+.error-title {
   font-size: 6rem;
   font-weight: 700;
   margin: 0;
+  height: 6.18rem;
+  @include center;
+}
+
+.error-subtitle {
+  font-size: 1.12rem;
+  width: 16.25rem;
+  margin: 0;
+}
+
+.error-link {
+  font-size: 0.87rem;
+}
+
+@include computer {
+  .error-container {
+    margin: 8.68rem 0;
+    row-gap: 8.68rem;
+  }
+
+  .error-title {
+    font-size: 18rem;
+    height: 16.43rem;
+  }
+
+  .error-subtitle {
+    font-size: 2.25rem;
+    width: 100%;
+  }
+
+  .error-link {
+    font-size: 1.12rem;
+  }
 }

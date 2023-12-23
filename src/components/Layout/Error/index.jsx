@@ -3,14 +3,15 @@ import '../../../scss/modules/layout/error.scss'
 
 function Error() {
   return (
-    <div className="error-container">
-      <h1 className="error-size">404</h1>
-      <p>
-        Oups! La page que
-        <br /> vous demandez n'existe pas.
+    <section className="error-container">
+      <h1 className="error-title">404</h1>
+      <p className="error-subtitle">
+        Oups! La page que vous demandez n'existe pas.
       </p>
-      <Link to="/">Retourner sur la page d'acceuil</Link>
-    </div>
+      <Link className="error-link" to="/">
+        Retourner sur la page d'acceuil
+      </Link>
+    </section>
   )
 }
 
