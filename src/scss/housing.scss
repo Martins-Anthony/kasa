@@ -10,4 +10,11 @@
   margin-bottom: 0.81rem;
 }
 
+.housing-collapse-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+  width: 100%;
+}
+
 @import '../scss/media/housing_media.scss';

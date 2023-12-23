@@ -1,5 +1,9 @@
 @import '../scss/styles/mixins';
 
+.about-container {
+  margin: 1.18rem 0;
+}
+
 .about-collapse-container {
   display: flex;
   flex-direction: column;
@@ -9,9 +13,14 @@
 }
 
 @include computer {
+  .about-container {
+    margin: 2.37rem 0;
+  }
+
   .about-collapse-container {
     padding-left: 6.75rem;
     padding-right: 6.75rem;
+    margin-top: 2.37rem;
   }
   .collapse-container {
     max-width: 63.94rem;

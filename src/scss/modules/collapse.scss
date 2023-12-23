@@ -1,16 +1,7 @@
 @import '../styles/colors';
 @import '../styles/mixins';
 
-.housing-collapse-container {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1.25rem;
-  width: 100%;
-}
-
 .collapse-container {
-  max-width: 36.37rem;
-  width: 100%;
   position: relative;
   height: 1.87rem;
   
@@ -98,7 +89,6 @@
   }
 
   .animated-container {
-  
     &.visible {
       padding-top: 4.37rem;
     }

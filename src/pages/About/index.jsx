@@ -5,32 +5,15 @@ import Collapse from '../../components/Collapse'
 import bannerAbout from '../../assets/banner/bannerTwo.jpeg'
 
 function About() {
+  const collapseContent = aboutList.map((item) => (
+    <Collapse key={item.id} title={item.title} content={item.description} />
+  ))
+
   return (
-    <>
+    <section className="about-container">
       <Banner picture={bannerAbout} />
-      <div className="about-collapse-container">
-        <Collapse
-          key={Object.keys(aboutList[0])[0]}
-          title={'Fiabilité'}
-          content={aboutList[0].fiabilite}
-        />
-        <Collapse
-          key={Object.keys(aboutList[0])[1]}
-          title={'Respect'}
-          content={aboutList[0].respect}
-        />
-        <Collapse
-          key={Object.keys(aboutList[0])[2]}
-          title={'Service'}
-          content={aboutList[0].service}
-        />
-        <Collapse
-          key={Object.keys(aboutList[0])[3]}
-          title={'Sécurité'}
-          content={aboutList[0].securite}
-        />
-      </div>
-    </>
+      <section className="about-collapse-container">{collapseContent}</section>
+    </section>
   )
 }
 
