@@ -22,9 +22,10 @@ function Slideshow({ picture }) {
   }
 
   return (
-    <div className="slideshow-container">
+    <div className="slideshow-container slideshow-border">
+      <div className="slideshow-background slideshow-border"></div>
       <img
-        className="slideshow-picture"
+        className="slideshow-picture slideshow-border"
         src={picture[currentSlide]}
         alt="image logement"
       />
