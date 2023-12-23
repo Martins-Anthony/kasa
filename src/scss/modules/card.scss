@@ -6,7 +6,7 @@
   flex-direction: column;
   gap: 1.25rem;
   margin-top: 1.37rem;
-  margin-bottom: 1.69rem;
+
   a {
     text-decoration: none;
   }
@@ -16,19 +16,13 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  height: 15.94rem;
 }
 
 .card-style {
   height: 15.94rem;
-  /*
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-  */
   border-radius: 0.62rem;
   width: 100%;
-  /*
-  
-  */
-
   position: relative;
 
   .card-img {
@@ -45,28 +39,20 @@
     color: $white;
     height: 3.25rem;
     position: relative;
-    
     z-index: 1;
   }
 }
 
-
 @include computer {
 
   .card-container {
-  
     background-color: $gray;
-
     border-radius: 1.56rem;
     padding: 3.5rem 3.12rem 2.68rem 3.12rem;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    
+    justify-content: space-between;  
     row-gap: 3.12rem;
-    /*
-    row-gap: 3.75rem;
-    */
   }
 
   .card-style {
@@ -75,8 +61,7 @@
 
     .card-link {
       height: 21.25rem;
-      max-width: 21.25rem;
- 
+      max-width: 21.25rem; 
     }
 
     .card-img {

@@ -14,7 +14,7 @@ function Housing() {
   const selectedHousing = housingData.find((housing) => housing.id === id)
 
   return (
-    <div className="housing-container">
+    <section className="housing-container">
       <Slideshow key={selectedHousing.id} picture={selectedHousing.pictures} />
       <div className="housing-profil-container">
         <div className="accommodation-container">
@@ -48,7 +48,7 @@ function Housing() {
           content={selectedHousing.equipments}
         />
       </div>
-    </div>
+    </section>
   )
 }
 

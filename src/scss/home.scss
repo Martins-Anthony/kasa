@@ -1,0 +1,11 @@
+@import '../scss/styles/mixins';
+
+.container-home {
+  margin: 1.25rem 0;
+}
+
+@include computer {
+  .container-home {
+    margin: 3.12rem 0;
+  }
+}
