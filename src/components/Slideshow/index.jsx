@@ -5,10 +5,10 @@ import '../../scss/modules/slideshow.scss'
 import React, { useState } from 'react'
 
 function Slideshow({ picture }) {
+  const [currentSlide, setCurrentSlide] = useState(0)
+
   let totalSlides = picture.length
   let visibleArrowAndCounter = true
-
-  const [currentSlide, setCurrentSlide] = useState(0)
 
   if (totalSlides <= 1) {
     visibleArrowAndCounter = false

@@ -1,4 +1,4 @@
-import ArrowBack from '../../assets/collapse/arrow_back.png'
+import ArrowBack from '../../assets/collapse/arrow_back.svg'
 import '../../scss/modules/collapse.scss'
 import React, { useState } from 'react'
 

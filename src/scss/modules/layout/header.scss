@@ -1,16 +1,20 @@
 @import "../../styles/mixins";
 
-header {
+.header-style {
+  @include center;
+  flex-direction: row;
   margin-top: 1.25rem;
   min-width: 17.5rem;
   max-width: 77.5rem;
+
   img {
     width: 9.06rem;
     height: 2.93rem;
   }
 }
 
-.header-style {
-  @include center;
-  flex-direction: row;
+@include computer {
+  .header-style {
+    margin-top: 2.81rem;
+  }
 }
