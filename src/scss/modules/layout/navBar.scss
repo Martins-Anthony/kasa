@@ -1,4 +1,5 @@
 @import "../../styles/colors";
+@import "../../styles/mixins";
 
 .nav-style {
   color: $primary;
@@ -7,12 +8,15 @@
   justify-content: flex-end;
   font-size: 0.75rem;
   column-gap: 1.62rem;
+
+  a {
+    text-transform: uppercase;
+  }
 }
 
-.style-link-on {
-  text-decoration: underline;
-}
-
-.style-link-off {
-  text-decoration: none;
+@include computer {
+  .nav-style a {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+  }
 }
