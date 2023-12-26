@@ -6,7 +6,12 @@ import bannerAbout from '../../assets/banner/bannerTwo.jpeg'
 
 function About() {
   const collapseContent = aboutList.map((item) => (
-    <Collapse key={item.id} title={item.title} content={item.description} />
+    <Collapse
+      key={item.id}
+      title={item.title}
+      content={item.description}
+      pageSpecificStyle={'about-collapse-title'}
+    />
   ))
 
   return (

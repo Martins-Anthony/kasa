@@ -1,13 +1,16 @@
 import ArrowBack from '../../assets/collapse/arrow_back.svg'
 import '../../scss/modules/collapse.scss'
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 
-function Collapse({ title, content }) {
+function Collapse({ title, content, pageSpecificStyle }) {
   const [isArrowDown, setIsArrowDown] = useState(false)
 
   const handleArrowClick = () => {
     setIsArrowDown(!isArrowDown)
   }
+
+  const collapseTitleClass = `collapse-title ${pageSpecificStyle}`
 
   let contentElement
 
@@ -19,7 +22,7 @@ function Collapse({ title, content }) {
 
   return (
     <div className={`collapse-container ${isArrowDown ? 'visible' : ''}`}>
-      <div className="collapse-title">
+      <div className={collapseTitleClass}>
         <h2>{title}</h2>
         <img
           src={ArrowBack}
@@ -37,6 +40,12 @@ function Collapse({ title, content }) {
       </div>
     </div>
   )
+}
+
+Collapse.propTypes = {
+  title: PropTypes.string.isRequired,
+  content: PropTypes.node.isRequired,
+  pageSpecificStyle: PropTypes.string.isRequired,
 }
 
 export default Collapse

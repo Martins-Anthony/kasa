@@ -21,7 +21,7 @@
   color: $white;
   height: 1.87rem;
   padding-left: 0.62rem;
-  padding-right: 0.62rem;
+  padding-right: 0.37rem;
   border-radius: 0.31rem;
   z-index: 1;
 
@@ -70,8 +70,6 @@
 @include computer {
   .collapse-title {
     height: 3.25rem;
-    padding-left: 0.93rem;
-    padding-right: 0.93rem;
 
     h2 {
       font-size: 1.5rem;

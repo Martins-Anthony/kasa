@@ -42,11 +42,13 @@ function Housing() {
           key={selectedHousing.id}
           title={'Description'}
           content={selectedHousing.description}
+          pageSpecificStyle="housing-collapse-title"
         />
         <Collapse
           key={`${selectedHousing.id}-2`}
           title={'Équipements'}
           content={selectedHousing.equipments}
+          pageSpecificStyle={'housing-collapse-title'}
         />
       </div>
     </section>

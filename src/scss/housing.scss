@@ -1,3 +1,5 @@
+@import "../scss/styles/mixins";
+
 .housing-container {
   margin: 1.68rem 0;
 }
@@ -17,4 +19,11 @@
   width: 100%;
 }
 
-@import '../scss/media/housing_media.scss';
+@include computer {
+  .housing-collapse-title {
+    padding-left: 0.62rem;
+    padding-right: 1.25rem;
+  }
+}
+
+@import "../scss/media/housing_media.scss";
