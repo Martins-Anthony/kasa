@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types'
-import DefaultPicture from '../../assets/profil/host.png'
 import '../../scss/modules/host.scss'
 import React from 'react'
 function Host({ name, picture }) {
@@ -22,11 +21,6 @@ function Host({ name, picture }) {
 Host.protoTypes = {
   name: PropTypes.string.isRequired,
   picture: PropTypes.string.isRequired,
-}
-
-Host.defaultProps = {
-  name: '',
-  picture: DefaultPicture,
 }
 
 export default Host

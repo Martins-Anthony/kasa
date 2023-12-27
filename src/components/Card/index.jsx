@@ -8,7 +8,7 @@ function Card() {
     return (
       <article className="card-style card-border" key={item.id}>
         <div>
-          <Link className="card-link" to={`/housing/${item.id}`} key={item.id}>
+          <Link className="card-link" to={`/housing/${item.id}`}>
             <img
               className="card-img card-border"
               src={item.cover}

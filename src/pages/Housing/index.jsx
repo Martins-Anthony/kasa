@@ -20,14 +20,14 @@ function Housing() {
 
   return (
     <section className="housing-container">
-      <Slideshow key={selectedHousing.id} picture={selectedHousing.pictures} />
+      <Slideshow picture={selectedHousing.pictures} />
       <div className="housing-profil-container">
         <div className="accommodation-container">
           <TitleLocalization
             title={selectedHousing.title}
             location={selectedHousing.location}
           />
-          <Tags arrays={selectedHousing.tags} id={`${selectedHousing.id}-1`} />
+          <Tags tagsArray={selectedHousing.tags} />
         </div>
         <div className="housing-host-container">
           <RatingStarts rating={selectedHousing.rating} />
@@ -39,13 +39,11 @@ function Housing() {
       </div>
       <div className="housing-collapse-container">
         <Collapse
-          key={selectedHousing.id}
           title={'Description'}
           content={selectedHousing.description}
           pageSpecificStyle={'housing-collapse-title'}
         />
         <Collapse
-          key={`${selectedHousing.id}-2`}
           title={'Équipements'}
           content={selectedHousing.equipments}
           pageSpecificStyle={'housing-collapse-title'}

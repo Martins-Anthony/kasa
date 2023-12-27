@@ -1,8 +1,8 @@
 import '../../scss/modules/tags.scss'
 
-function Tags({ arrays, id }) {
-  const listItems = arrays.map((listItem) => (
-    <li key={id + listItem}>{listItem}</li>
+function Tags({ tagsArray }) {
+  const listItems = tagsArray.map((listItem) => (
+    <li key={listItem}>{listItem}</li>
   ))
   return <ul className="tags-container">{listItems}</ul>
 }
