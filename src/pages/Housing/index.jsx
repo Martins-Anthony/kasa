@@ -42,7 +42,7 @@ function Housing() {
           key={selectedHousing.id}
           title={'Description'}
           content={selectedHousing.description}
-          pageSpecificStyle="housing-collapse-title"
+          pageSpecificStyle={'housing-collapse-title'}
         />
         <Collapse
           key={`${selectedHousing.id}-2`}

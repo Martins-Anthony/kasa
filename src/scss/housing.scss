@@ -24,6 +24,26 @@
     padding-left: 0.62rem;
     padding-right: 1.25rem;
   }
-}
+  .housing-container {
+    @include center;
+    flex-direction: column;
+    max-width: 77.5rem;
+    margin:3.12rem 0;
+  }
 
-@import "../scss/media/housing_media.scss";
+  .housing-profil-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .housing-host-container {
+    flex-direction: column-reverse;
+    row-gap: 1.31rem;
+  }
+
+  .housing-collapse-container {
+    flex-direction: row;
+    column-gap: 4.75rem;
+  }
+}
