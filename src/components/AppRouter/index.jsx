@@ -1,6 +1,6 @@
 import React from 'react'
 import Home from '../../pages/Home'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from '../../components/Layout/Header'
 import About from '../../pages/About'
 import Error from '../Layout/Error'
@@ -10,7 +10,7 @@ import Housing from '../../pages/Housing'
 function AppRouter() {
   return (
     <Router>
-      <div className="main-container">
+      <main className="main-container">
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -18,7 +18,7 @@ function AppRouter() {
           <Route path="/about" element={<About />} />
           <Route path="*" element={<Error />} />
         </Routes>
-      </div>
+      </main>
       <Footer />
     </Router>
   )

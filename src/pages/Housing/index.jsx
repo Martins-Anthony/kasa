@@ -15,7 +15,7 @@ function Housing() {
   const selectedHousing = housingData.find((housing) => housing.id === id)
 
   if (!selectedHousing) {
-    return <Navigate to="error" />
+    return <Navigate to="*" />
   }
 
   return (
