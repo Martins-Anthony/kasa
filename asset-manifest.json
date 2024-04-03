@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/kasa/static/css/main.f9d6fee6.css",
-    "main.js": "/kasa/static/js/main.e625780e.js",
-    "static/media/bannerTwo.jpeg": "/kasa/static/media/bannerTwo.144245b0cf50dfc525bc.jpeg",
-    "static/media/bannerOne.jpeg": "/kasa/static/media/bannerOne.f00ea556b7fe5084a7a6.jpeg",
-    "static/media/logo-header.svg": "/kasa/static/media/logo-header.33c2abdaa59fa8888c45ea81b1d1a546.svg",
-    "static/media/logo-footer.svg": "/kasa/static/media/logo-footer.e3cc7d0afee8182b2149c5a84b731a57.svg",
-    "index.html": "/kasa/index.html",
-    "static/media/star-active.svg": "/kasa/static/media/star-active.f47de1483d883b69c6210d622f75c05c.svg",
-    "static/media/star-inactive.svg": "/kasa/static/media/star-inactive.c864407432a61da616f95e669105d42e.svg",
-    "static/media/arrow_back.svg": "/kasa/static/media/arrow_back.4f89c6976fd9a2d803c2ede1bf794194.svg",
-    "static/media/arrow_right.svg": "/kasa/static/media/arrow_right.49f39c5535c670bbc6109a5bb5877456.svg",
-    "static/media/arrow_left.svg": "/kasa/static/media/arrow_left.fcacda2555db27c1bb41db35c4285318.svg",
-    "main.f9d6fee6.css.map": "/kasa/static/css/main.f9d6fee6.css.map",
-    "main.e625780e.js.map": "/kasa/static/js/main.e625780e.js.map"
+    "main.css": "/kasa.github.io/static/css/main.f9d6fee6.css",
+    "main.js": "/kasa.github.io/static/js/main.ea06e02d.js",
+    "static/media/bannerTwo.jpeg": "/kasa.github.io/static/media/bannerTwo.144245b0cf50dfc525bc.jpeg",
+    "static/media/bannerOne.jpeg": "/kasa.github.io/static/media/bannerOne.f00ea556b7fe5084a7a6.jpeg",
+    "static/media/logo-header.svg": "/kasa.github.io/static/media/logo-header.33c2abdaa59fa8888c45ea81b1d1a546.svg",
+    "static/media/logo-footer.svg": "/kasa.github.io/static/media/logo-footer.e3cc7d0afee8182b2149c5a84b731a57.svg",
+    "index.html": "/kasa.github.io/index.html",
+    "static/media/star-active.svg": "/kasa.github.io/static/media/star-active.f47de1483d883b69c6210d622f75c05c.svg",
+    "static/media/star-inactive.svg": "/kasa.github.io/static/media/star-inactive.c864407432a61da616f95e669105d42e.svg",
+    "static/media/arrow_back.svg": "/kasa.github.io/static/media/arrow_back.4f89c6976fd9a2d803c2ede1bf794194.svg",
+    "static/media/arrow_right.svg": "/kasa.github.io/static/media/arrow_right.49f39c5535c670bbc6109a5bb5877456.svg",
+    "static/media/arrow_left.svg": "/kasa.github.io/static/media/arrow_left.fcacda2555db27c1bb41db35c4285318.svg",
+    "main.f9d6fee6.css.map": "/kasa.github.io/static/css/main.f9d6fee6.css.map",
+    "main.ea06e02d.js.map": "/kasa.github.io/static/js/main.ea06e02d.js.map"
   },
   "entrypoints": [
     "static/css/main.f9d6fee6.css",
-    "static/js/main.e625780e.js"
+    "static/js/main.ea06e02d.js"
   ]
 }
