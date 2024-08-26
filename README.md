@@ -7,7 +7,7 @@ Il consiste à développer le front-end d'une application de location immobiliè
 L'application a été développé en utilisant React et React Router, avec des maquettes fournies sur Figma 
 ([voir la maquette](https://www.figma.com/design/2BZEoBhyxt5IwZgRn0wGsL/Kasa_FR)) et des données simulées extraites d'un fichier JSON.
 
-## Démo en Ligne
+## Démo en ligne
 
 Vous pouvez consulter le projet [Kasa sur GitHub Pages ](https://martins-anthony.github.io/kasa/).
 
@@ -48,7 +48,7 @@ pour exécuter ce projet en local, suivez ces étapes :
     ```
 5. L'application sera disponible sur `http://localhost:3000`.
 
-## Technologies Utilisées
+## Technologies utilisées
 
 - **React** : Bibliothèque JavaScript pour construire l'interface utilisateur.
 - **React Router** : Gestionnaire de routage pour les applications React.
