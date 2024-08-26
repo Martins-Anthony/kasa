@@ -2,11 +2,10 @@
 
 ## Description du projet
 
-Ce projet a été réalisé dans le cadre de ma formation d'intégrateur web chez OpenClassrooms.<br>
+Réalisation dans le cadre de ma formation d'intégrateur web chez OpenClassrooms.<br><br>
 Il consiste à développer le front-end d'une application de location immobilière pour Kasa, une entreprise de location d'appartements entre particuliers.<br>
 L'application a été développé en utilisant React et React Router, avec des maquettes fournies sur Figma 
 ([voir la maquette](https://www.figma.com/design/2BZEoBhyxt5IwZgRn0wGsL/Kasa_FR)) et des données simulées extraites d'un fichier JSON.
-
 
 ## Démo en Ligne
 
@@ -59,4 +58,4 @@ pour exécuter ce projet en local, suivez ces étapes :
 
 ## Auteur
 
-- **Martins Anthony** - [Portfolio](https://webcraft-anthony.com/)
+- **Martins Anthony** - [Portfolio](https://webcraft-anthony.com/) - [GitHub](https://github.com/Martins-Anthony)
