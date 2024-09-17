@@ -1,5 +1,9 @@
 # Kasa - Application web de location immobilière
 
+## Aperçu du projet
+
+![Aperçu Showcase duo](assets/screenshot.png)
+
 ## Description du projet
 
 Réalisation dans le cadre de ma formation d'intégrateur web chez OpenClassrooms.<br><br>
@@ -50,12 +54,12 @@ pour exécuter ce projet en local, suivez ces étapes :
 
 ## Technologies utilisées
 
-- **React** : Bibliothèque JavaScript pour construire l'interface utilisateur.
-- **React Router** : Gestionnaire de routage pour les applications React.
-- **SCSS (SASS)** : Préprocesseur CSS utilisant la syntaxe SCSS pour structurer et organiser les styles.
-- **JavaScript (ES6+)** : Pour la logique d'application.
-- **HTML5 & CSS3** : Pour la structure et le design de l'application.
+- [![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)](https://react.dev/) : Bibliothèque JavaScript pour construire l'interface utilisateur.
+- [![React Router](https://img.shields.io/badge/React%20Router-CA4245?style=flat&logo=react-router&logoColor=white)](https://reactrouter.com/) : Gestionnaire de routage pour les applications React.
+- [![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=flat&logo=sass&logoColor=white)](https://sass-lang.com/) : Préprocesseur CSS utilisant la syntaxe SCSS pour structurer et organiser les styles.
+- [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) : Pour la logique d'application.
+- **[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML) & [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)** : Pour la structure et le design de l'application.
 
 ## Auteur
 
-- **Martins Anthony** - [Portfolio](https://webcraft-anthony.com/) - [GitHub](https://github.com/Martins-Anthony)
+[![Portfolio](https://img.shields.io/badge/Portfolio-webcraft--anthony.com-blueviolet?style=for-the-badge&logo=internet-explorer&logoColor=white)](http://webcraft-anthony.com)  [![GitHub](https://img.shields.io/badge/GitHub-Martins--Anthony-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Martins-Anthony)
